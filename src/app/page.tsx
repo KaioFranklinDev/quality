@@ -10,9 +10,9 @@ export default function Home() {
           <p className="text-gray-400">demostração de links já criados</p>
         </div>
         <button className="h-12 w-32 bg-yellow-400" ><Link href={"/login"} >Ir ao Login</Link></button>
-        <button className="h-12 w-32 bg-yellow-400 " ><Link href={"/novas"} >Ir página "Novas"</Link></button>
-        <button className="h-12 w-32 bg-yellow-400 " ><Link href={"/aprovadas"} >Ir página "Aprovadas"</Link></button>
-        <button className="h-12 w-32 bg-yellow-400 " ><Link href={"/negadas"} >Ir página "Negadas"</Link></button>
+        <button className="h-12 w-32 bg-yellow-400 " ><Link href={"/novas"} >Ir página &quot;Novas&quot;</Link></button>
+        <button className="h-12 w-32 bg-yellow-400 " ><Link href={"/aprovadas"} >Ir página &quot;Aprovadas&quot;</Link></button>
+        <button className="h-12 w-32 bg-yellow-400 " ><Link href={"/negadas"} >Ir página &quot;Negadas&quot;</Link></button>
       </main>
       
     </div>
