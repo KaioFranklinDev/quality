@@ -1,5 +1,7 @@
 "use client"
 import Image from "next/image";
+import Cookies from "js-cookie";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 export default function DropMenu(){
     const [openDropMenu, setOpenDropMenu]= useState(false)
@@ -15,6 +17,11 @@ export default function DropMenu(){
             return
         }
     }
+    const router = useRouter()
+    function logoutHandler(){
+        Cookies.remove('auth_token')
+        router.push('/login')
+    }
     return(
         <div className="bg-red-300 flex flex-row-reverse  ">
             <button onClick={dropMenu}>
@@ -22,7 +29,7 @@ export default function DropMenu(){
             </button>
             {openDropMenu? (<div className="absolute h-auto w-auto p-2 mt-8 text-end bg-lime-200 ">
                 <div>gerenciamento de obras</div>
-                <div>sair</div>
+                <button onClick={logoutHandler}>Sair</button>
             </div>) :null}
         </div>
     )

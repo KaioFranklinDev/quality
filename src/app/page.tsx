@@ -8,6 +8,7 @@ export default function Home() {
         <div className="flex flex-col items-center pb-20 text-white">
           <p className="text-xl">Home Links</p>
           <p className="text-gray-400">demostração de links já criados</p>
+          <div className="text-green-500 text-justify">Disclaimer: Você só pode ver essa pagina por estar logado</div>
         </div>
         <button className="h-12 w-32 bg-yellow-400" ><Link href={"/login"} >Ir ao Login</Link></button>
         <button className="h-12 w-32 bg-yellow-400 " ><Link href={"/novas"} >Ir página &quot;Novas&quot;</Link></button>
