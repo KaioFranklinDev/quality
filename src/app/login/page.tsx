@@ -17,14 +17,14 @@ export default function Page() {
                 <Image alt="logo enpresa" src={"/img/logoQuality.jpg"} height={100} width={100} />
             </div>
             <div className="text-green-500">Disclaimer: acesse com qualaquer usuario e senha</div>
-            <form className="gap-5  flex flex-col items-center justify-center">
+            <form className="text-black gap-5  flex flex-col items-center justify-center">
                 <div>
-                    <p>Usuario</p>
-                    <input type="email" name="email" placeholder="Email" required />
+                    <p className=" text-white">Usuario</p>
+                    <input className="p-1" type="email" name="email" placeholder="Email" required />
                 </div>
                 <div>
-                    <p>password</p>
-                    <input type="password" name="password" placeholder="Password" required />
+                    <p className=" text-white">password</p>
+                    <input className="p-1" type="password" name="password" placeholder="Password" required />
                 </div>
                 <button onClick={loginHendler} className="text-black h-[50px] w-[100px] bg-yellow-500" >Login</button>
             </form>
